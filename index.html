@@ -15,6 +15,14 @@
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.init();
+      const hash = window.location.hash;
+      if (hash && hash.includes("invite_token")) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.acceptInvite();
+          }
+        });
+      }
     }
   </script>
 </body>
