@@ -10,20 +10,5 @@
   <a href="content/about/about.md">About Me</a><br>
   <a href="content/projects/index.html">Projects</a><br>
   <a href="admin/">Admin</a>
-
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.init();
-      const hash = window.location.hash;
-      if (hash && hash.includes("invite_token")) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.acceptInvite();
-          }
-        });
-      }
-    }
-  </script>
 </body>
 </html>
