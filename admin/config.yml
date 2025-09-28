@@ -6,24 +6,20 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-
-  # About Me
   - name: "about"
     label: "About Me"
     folder: "content/about"
-    create: false
-    slug: "about"
+    create: true
+    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
-  # Projects
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Project Name", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Image", name: "image", widget: "image"}
