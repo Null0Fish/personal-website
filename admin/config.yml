@@ -1,8 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Null0Fish/personal-website
   branch: main
-  identity_url: https://jacksonconnors.netlify.app/.netlify/identity
-  gateway_url: https://jacksonconnors.netlify.app/.netlify/git
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -14,8 +13,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "projects"
     label: "Projects"
@@ -23,5 +22,5 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
