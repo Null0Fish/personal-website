@@ -2,8 +2,7 @@ backend:
   name: github
   repo: Null0Fish/personal-website
   branch: main
-  base_url: https://api.netlify.com
-  site_id: cde8e36d-c712-49b9-86f6-a8fe72c722ab
+  auth_type: implicit
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
