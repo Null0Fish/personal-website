@@ -1,4 +1,4 @@
-name = "personal-website-worker"
+name = 'personal-website-hosting'
 compatibility_date = "2025-09-29"
 
 type = "javascript"
