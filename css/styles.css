@@ -1,27 +1,123 @@
-/* Add a black background color to the top navigation */
-.navigation-bar {
-  background-color: #333;
-  overflow: hidden;
+:root {
+  --gunmetal: #2f323aff;          /* dark base */
+  --chinese-violet: #77567aff;    /* muted purple */
+  --french-mauve: #c47ac0ff;      /* light purple */
+  --amaranth-pink: #e39ec1ff;     /* warm highlight pink */
+  --tea-rose-red: #debac0ff;      /* soft rose background */
+  --lavender-gray: #bbaed0ff;     /* NEW: gentle neutral tone for contrast */
 }
 
-/* Style the links inside the navigation bar */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--gunmetal);
+  color: var(--tea-rose-red);
+  line-height: 1.6;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.navigation-bar {
+  background-color: var(--gunmetal);
+  overflow: hidden;
+  border-bottom: 10px solid var(--french-mauve);
+}
+
 .navigation-bar a {
   float: left;
-  color: #f2f2f2;
+  color: var(--tea-rose-red);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Change the color of links on hover */
 .navigation-bar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--chinese-violet);
+  color: var(--amaranth-pink);
 }
 
-/* Add a color to the active/current link */
 .navigation-bar a.active {
-  background-color: #04AA6D;
-  color: white;
+  background-color: var(--french-mauve);
+  color: var(--gunmetal);
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--chinese-violet);
+  color: var(--amaranth-pink);
+}
+
+.hero img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+  padding: 60px 20px;
+  background-color: var(--lavender-gray);
+  color: var(--gunmetal);
+  max-width: 800px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Gallery section */
+.gallery {
+  padding: 60px 20px;
+  background-color: var(--chinese-violet);
+  color: var(--gunmetal);
+  text-align: center;
+}
+
+.sample-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.project {
+  background-color: var(--tea-rose-red);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.project h3 {
+  margin: 10px 0 5px;
+  color: var(--chinese-violet);
+}
+
+.project p {
+  font-size: 14px;
+  color: var(--gunmetal);
 }
