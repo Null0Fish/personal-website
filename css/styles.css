@@ -1,92 +1,129 @@
+/* Color Theme */
 :root {
-  --gunmetal: #2f323aff;          /* dark base */
-  --chinese-violet: #77567aff;    /* muted purple */
-  --french-mauve: #c47ac0ff;      /* light purple */
-  --amaranth-pink: #e39ec1ff;     /* warm highlight pink */
-  --tea-rose-red: #debac0ff;      /* soft rose background */
-  --lavender-gray: #bbaed0ff;     /* NEW: gentle neutral tone for contrast */
+  --bittersweet: #ee6352;
+  --azure-web: #d6e5e3;
+  --caribbean-current: #006d77ff;
+  --cerulean: #40798c;
+  --dark-purple: #32161F;
 }
 
+/* General Styles */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--gunmetal);
-  color: var(--tea-rose-red);
+  background-color: var(--dark-purple);
+  color: var(--azure-web);
   line-height: 1.6;
 }
 
-body a {
+a {
   text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
+a:hover {
+  color: var(--bittersweet);
+}
+
+/* Navigation Bar */
 .navigation-bar {
-  background-color: var(--gunmetal);
-  overflow: hidden;
-  border-bottom: 10px solid var(--french-mauve);
+  background-color: var(--dark-purple);
+  border-bottom: 6px solid var(--bittersweet);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 10px 0;
 }
 
 .navigation-bar a {
-  float: left;
-  color: var(--tea-rose-red);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  color: var(--azure-web);
+  padding: 14px 20px;
   font-size: 17px;
+  border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navigation-bar a:hover {
-  background-color: var(--chinese-violet);
-  color: var(--amaranth-pink);
+  background-color: var(--cerulean);
+  color: var(--azure-web);
 }
 
 .navigation-bar a.active {
-  background-color: var(--french-mauve);
-  color: var(--gunmetal);
+  background-color: var(--bittersweet);
+  color: var(--dark-purple);
 }
 
+/* Hero */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: var(--chinese-violet);
-  color: var(--amaranth-pink);
+  background: var(--cerulean);
+  color: var(--azure-web);
+  box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--azure-web);
+}
+
+.hero p {
+  color: var(--dark-purple);
+  font-size: 1.1rem;
 }
 
 .hero img {
   width: 80%;
   max-width: 600px;
   border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* About */
 .about {
+  background-color: var(--azure-web);
+  color: var(--dark-purple);
   padding: 60px 20px;
-  background-color: var(--lavender-gray);
-  color: var(--gunmetal);
   max-width: 800px;
   margin: 60px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Gallery section */
-.gallery {
+.about h2 a {
+  color: var(--cerulean);
+  transition: color 0.3s ease;
+}
+
+.about h2 a:hover {
+  color: var(--bittersweet);
+}
+
+/* Sample Project Gallery (on index.html)*/
+.sample-gallery {
+  background-color: var(--cerulean);
+  color: var(--azure-web);
   padding: 60px 20px;
-  background-color: var(--chinese-violet);
-  color: var(--gunmetal);
   text-align: center;
+}
+
+.sample-gallery h2 {
+  color: var(--azure-web);
+  font-size: 2rem;
 }
 
 .sample-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
 
 .sample-project {
-  background-color: var(--tea-rose-red);
+  background-color: var(--caribbean-current);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -95,50 +132,145 @@ body a {
 
 .sample-project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .sample-project img {
   width: 100%;
   height: auto;
   display: block;
-  transition: opacity 0.3s ease;
 }
 
 .sample-project h3 {
-  margin: 10px 0 5px;
-  color: var(--chinese-violet);
+  color: var(--dark-purple);
+  margin: 12px 0 6px;
 }
 
 .sample-project p {
-  font-size: 14px;
-  color: var(--gunmetal);
+  color: var(--dark-purple);
+  font-size: 0.95rem;
+  padding: 0 10px 15px;
 }
 
-/* Style all font awesome icons */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
+/* Offical Project gallery (on projects.html) */
+.gallery {
+  padding: 80px 20px;
+  background-color: var(--caribbean-current);
+  color: var(--dark-purple);
+}
+
+.gallery h2 {
   text-align: center;
-  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  color: var(--dark-purple);
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* key change — align at the top */
+  gap: 40px;
+  background-color: var(--azure-web);
+  color: var(--russian-violet);
+  padding: 40px;
+  border-radius: 12px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 1100px;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+.project-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers text inside its box */
 }
 
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+.project img {
+  width: 40%;
+  max-width: 400px;
+  align-self: center; /* centers the image with the text block vertically */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.project-text h3 {
+  font-size: 1.6rem;
+  margin-top: 0;
+  color: var(--bittersweet);
+}
+
+.project img {
+  align-items: center;            /* this centers items vertically */
+  width: 40%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--dark-purple);
+  color: var(--azure-web);
+  text-align: center;
+  padding: 20px;
+  border-top: 6px solid var(--bittersweet);
+  font-size: 0.9rem;
+}
+
+/*  Adjustments */
+@media (max-width: 900px) {
+  .project {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .project:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .project img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .project-text p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .gallery h2,
+  .sample-gallery h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-text p {
+    font-size: 0.95rem;
+  }
 }
