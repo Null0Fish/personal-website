@@ -2,14 +2,14 @@
 .about-hero {
   text-align: center;
   padding: 80px 20px;
-  background: var(--bright-blue);
-  color: var(--midnight);
+  background: var(--soft-blue);
+  color: var(--dark-blue);
   box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .about-hero h1 {
   font-size: 2.5rem;
-  color: var(--midnight);
+  color: var(--dark-blue);
 }
 
 .about-hero .hero-content {
@@ -31,7 +31,7 @@
 .about-hero img {
   margin-right: 150px;
   padding: 10px;
-  background-color: var(--midnight);
+  background-color: var(--dark-blue);
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -46,7 +46,7 @@
 /* About */
 .about {
   background-color: var(--navy-blue);
-  color: var(--sky-blue);
+  color: var(--light-blue);
   padding: 60px 20px;
   max-width: 800px;
   margin: 60px auto;
@@ -55,10 +55,70 @@
 }
 
 .about h2 a {
-  color: var(--bright-blue);
+  color: var(--soft-blue);
   transition: color 0.3s ease;
 }
 
 .about h2 a:hover {
-  color: var(--sky-blue);
+  color: var(--light-blue);
+}
+
+/* Contact */
+.contact {
+  background-color: var(--soft-blue);
+  color: var(--dark-blue);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: var(--dark-blue);
+  font-size: 2rem;
+}
+
+.contact a {
+  color: var(--deep-blue)
+}
+
+.contact a:hover {
+  color: var(--navy-blue)
+}
+
+@media (max-width: 900px) {
+  .about-hero .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-hero img {
+    margin: 30px auto 30px auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-hero p {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 60px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
 }

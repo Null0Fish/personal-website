@@ -1,13 +1,61 @@
+/* Index Hero */
+.index-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--soft-blue);
+  color: var(--dark-blue);
+  box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.index-hero h1 {
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+}
+
+.index-hero p {
+  color: var(--deep-blue);
+  font-size: 1.1rem;
+  margin: 50px;
+}
+
+.index-hero img {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Sample About */
+.sample-about {
+  background-color: var(--navy-blue);
+  color: var(--sky-blue);
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.sample-about h2 a {
+  color: var(--bright-blue);
+  transition: color 0.3s ease;
+}
+
+.sample-about h2 a:hover {
+  color: var(--sky-blue);
+}
+
 /* Sample Project Gallery */
 .sample-gallery {
-  background-color: var(--bright-blue);
-  color: var(--midnight);
+  background-color: var(--soft-blue);
+  color: var(--dark-blue);
   padding: 60px 20px;
   text-align: center;
 }
 
 .sample-gallery h2 {
-  color: var(--midnight);
+  color: var(--dark-blue);
   font-size: 2rem;
 }
 
@@ -39,26 +87,6 @@
 
 .sample-project h3,
 .sample-project p {
-  color: var(--sky-blue);
+  color: var(--light-blue);
   padding: 0 10px 10px;
-}
-
-/* Sample About */
-.sample-about {
-  background-color: var(--navy-blue);
-  color: var(--sky-blue);
-  padding: 60px 20px;
-  max-width: 800px;
-  margin: 60px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-}
-
-.sample-about h2 a {
-  color: var(--bright-blue);
-  transition: color 0.3s ease;
-}
-
-.sample-about h2 a:hover {
-  color: var(--sky-blue);
 }

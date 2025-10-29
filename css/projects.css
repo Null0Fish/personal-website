@@ -2,7 +2,7 @@
 .gallery {
   padding: 80px 20px;
   background-color: var(--navy-blue);
-  color: var(--sky-blue);
+  color: var(--light-blue);
 }
 
 .gallery h2 {
@@ -17,7 +17,7 @@
   align-items: center;
   gap: 40px;
   background-color: var(--deep-blue);
-  color: var(--sky-blue);
+  color: var(--light-blue);
   padding: 40px;
   border-radius: 12px;
   margin: 40px auto;
@@ -28,7 +28,7 @@
 .project-text h3 {
   font-size: 1.6rem;
   margin-top: 0;
-  color: var(--bright-blue);
+  color: var(--soft-blue);
 }
 
 .project img {
@@ -42,4 +42,18 @@
 .project img:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 900px) {
+  .project img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project img {
+    width: 100%;
+    max-width: none;
+  }
 }

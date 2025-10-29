@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": "project_1",
+      "title": "Project One",
+      "preview_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis.",
+      "preview_image": "images/sample_image_1.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus molestiae, tenetur voluptatum ut ipsam enim ratione id pariatur sunt hic praesentium alias magnam officia fugit eius asperiores amet error corrupti aliquam fuga? Labore, sequi illo maxime, rem deleniti beatae, dolores nihil recusandae suscipit rerum veniam et. Ad vero voluptates cupiditate! Minima doloremque provident cum, explicabo nulla nam suscipit, culpa eveniet nobis saepe accusamus quasi molestiae dolore possimus voluptatibus numquam maxime illo cupiditate? Soluta distinctio, officiis velit obcaecati quasi debitis illum quidem ratione facere temporibus id, non, tempore fuga? Laboriosam dignissimos voluptatem nesciunt ratione, asperiores ipsam eligendi. Vero, molestiae! Asperiores.",
+      "image": "images/sample_image_2.png",
+      "alt": "img alt",
+      "date": "Fall 2025"
+    },
+    {
+      "id": "project_2",
+      "title": "Project Two",
+      "preview_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis.",
+      "preview_image": "images/sample_image_1.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus molestiae, tenetur voluptatum ut ipsam enim ratione id pariatur sunt hic praesentium alias magnam officia fugit eius asperiores amet error corrupti aliquam fuga? Labore, sequi illo maxime, rem deleniti beatae, dolores nihil recusandae suscipit rerum veniam et. Ad vero voluptates cupiditate! Minima doloremque provident cum, explicabo nulla nam suscipit, culpa eveniet nobis saepe accusamus quasi molestiae dolore possimus voluptatibus numquam maxime illo cupiditate? Soluta distinctio, officiis velit obcaecati quasi debitis illum quidem ratione facere temporibus id, non, tempore fuga? Laboriosam dignissimos voluptatem nesciunt ratione, asperiores ipsam eligendi. Vero, molestiae! Asperiores.",
+      "image": "images/sample_image_2.png",
+      "alt": "img alt",
+      "date": "Fall 2025"
+    },
+    {
+      "id": "project_3",
+      "title": "Project Three",
+      "preview_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis.",
+      "preview_image": "images/sample_image_1.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus molestiae, tenetur voluptatum ut ipsam enim ratione id pariatur sunt hic praesentium alias magnam officia fugit eius asperiores amet error corrupti aliquam fuga? Labore, sequi illo maxime, rem deleniti beatae, dolores nihil recusandae suscipit rerum veniam et. Ad vero voluptates cupiditate! Minima doloremque provident cum, explicabo nulla nam suscipit, culpa eveniet nobis saepe accusamus quasi molestiae dolore possimus voluptatibus numquam maxime illo cupiditate? Soluta distinctio, officiis velit obcaecati quasi debitis illum quidem ratione facere temporibus id, non, tempore fuga? Laboriosam dignissimos voluptatem nesciunt ratione, asperiores ipsam eligendi. Vero, molestiae! Asperiores.",
+      "image": "images/sample_image_2.png",
+      "alt": "img alt",
+      "date": "Fall 2025"
+    }
+  ]
+}

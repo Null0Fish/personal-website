@@ -1,10 +1,10 @@
 /* Color Theme */
 :root {
-  --sky-blue: #78c0e0;     /* soft, light blue — accent color */
-  --deep-blue: #1e1658;    /* dark indigo — main background */
-  --navy-blue: #2e388e;    /* mid-dark blue — secondary section background */
-  --bright-blue: #b4d6eb;  /* vivid cyan-blue — highlight / hover color */
-  --midnight: #181829;     /* near-black blue — footer and contrast text */
+  --light-blue: #78c0e0;
+  --deep-blue: #1e1658;
+  --navy-blue: #2e388e;
+  --soft-blue: #b4d6eb;
+  --dark-blue: #181829;
 }
 
 /* General Styles */
@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--deep-blue);
-  color: var(--sky-blue);
+  color: var(--light-blue);
   line-height: 1.6;
 }
 
@@ -23,12 +23,12 @@ a {
 }
 
 a:hover {
-  color: var(--bright-blue);
+  color: var(--soft-blue);
 }
 
 /* Navigation Bar */
 .navigation-bar {
-  background-color: var(--midnight);
+  background-color: var(--dark-blue);
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -37,7 +37,7 @@ a:hover {
 }
 
 .navigation-bar a {
-  color: var(--sky-blue);
+  color: var(--light-blue);
   padding: 14px 20px;
   font-size: 17px;
   border-radius: 6px;
@@ -45,12 +45,12 @@ a:hover {
 }
 
 .navigation-bar a:hover {
-  background-color: var(--bright-blue);
-  color: var(--midnight);
+  background-color: var(--soft-blue);
+  color: var(--dark-blue);
 }
 
 .navigation-bar a.active {
-  background-color: var(--sky-blue);
+  background-color: var(--light-blue);
   color: var(--deep-blue);
 }
 
@@ -58,14 +58,14 @@ a:hover {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: var(--bright-blue);
-  color: var(--midnight);
+  background: var(--soft-blue);
+  color: var(--dark-blue);
   box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  color: var(--midnight);
+  color: var(--dark-blue);
 }
 
 .hero p {
@@ -84,8 +84,8 @@ a:hover {
 
 /* Footer */
 footer {
-  background-color: var(--midnight);
-  color: var(--sky-blue);
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
