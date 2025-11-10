@@ -2,27 +2,27 @@
   "projects": [
     {
       "id": "project_1",
-      "title": "Project One",
-      "preview_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis.",
+      "title": "Personal Website",
+      "preview_description": "This project encompasses all the work I did to create the website you see now.",
       "preview_image": "images/sample_image_1.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus molestiae, tenetur voluptatum ut ipsam enim ratione id pariatur sunt hic praesentium alias magnam officia fugit eius asperiores amet error corrupti aliquam fuga? Labore, sequi illo maxime, rem deleniti beatae, dolores nihil recusandae suscipit rerum veniam et. Ad vero voluptates cupiditate! Minima doloremque provident cum, explicabo nulla nam suscipit, culpa eveniet nobis saepe accusamus quasi molestiae dolore possimus voluptatibus numquam maxime illo cupiditate? Soluta distinctio, officiis velit obcaecati quasi debitis illum quidem ratione facere temporibus id, non, tempore fuga? Laboriosam dignissimos voluptatem nesciunt ratione, asperiores ipsam eligendi. Vero, molestiae! Asperiores.",
+      "description": "I had the problem of lacking a unified space to display projects I have done to peers and prospective employers. To solve such a problem I decided to make this website. I have used services like Wordpress and Bootstrap in the past, but I nonetheless decided to develop all the code for this website myself. I did so because the scope of this site was small and because I wanted to make it highly personalized. The website I ended up creating a static set of pages hosted through Cloudflare. Although I am familiar with backend development, I saw no need to go beyond frontend for this website. ",
       "image": "images/sample_image_2.png",
       "alt": "img alt",
       "date": "Fall 2025"
     },
     {
       "id": "project_2",
-      "title": "Project Two",
-      "preview_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis.",
+      "title": "Terra Bomber",
+      "preview_description": "Using Godot game engine I made a 2D puzzle platformer game that I published.",
       "preview_image": "images/sample_image_1.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus molestiae, tenetur voluptatum ut ipsam enim ratione id pariatur sunt hic praesentium alias magnam officia fugit eius asperiores amet error corrupti aliquam fuga? Labore, sequi illo maxime, rem deleniti beatae, dolores nihil recusandae suscipit rerum veniam et. Ad vero voluptates cupiditate! Minima doloremque provident cum, explicabo nulla nam suscipit, culpa eveniet nobis saepe accusamus quasi molestiae dolore possimus voluptatibus numquam maxime illo cupiditate? Soluta distinctio, officiis velit obcaecati quasi debitis illum quidem ratione facere temporibus id, non, tempore fuga? Laboriosam dignissimos voluptatem nesciunt ratione, asperiores ipsam eligendi. Vero, molestiae! Asperiores.",
+      "description": "Terra Bomber is a polished passion project of me learning about the world of game development. I spent time learning how to design 2D pixel art with tools like Aesprite, writing code in Godot’s native language, GDscript, and understanding how to effectively structure a project of this size to ensure successful development. Although I had a lot of fun with this project I believe game development will forever remain a small hobby for me. Instead my large takeaways from this project would be Git for structuring and version control, as this was one of my first times interacting with my own repository. In connection to Git, I have posted the game’s entire source code on GitHub and I also have a runnable instance of the game on itch.io.",
       "image": "images/sample_image_2.png",
       "alt": "img alt",
-      "date": "Fall 2025"
+      "date": "Spring 2025"
     },
     {
       "id": "project_3",
-      "title": "Project Three",
+      "title": "Default Project",
       "preview_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis.",
       "preview_image": "images/sample_image_1.png",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus molestiae, tenetur voluptatum ut ipsam enim ratione id pariatur sunt hic praesentium alias magnam officia fugit eius asperiores amet error corrupti aliquam fuga? Labore, sequi illo maxime, rem deleniti beatae, dolores nihil recusandae suscipit rerum veniam et. Ad vero voluptates cupiditate! Minima doloremque provident cum, explicabo nulla nam suscipit, culpa eveniet nobis saepe accusamus quasi molestiae dolore possimus voluptatibus numquam maxime illo cupiditate? Soluta distinctio, officiis velit obcaecati quasi debitis illum quidem ratione facere temporibus id, non, tempore fuga? Laboriosam dignissimos voluptatem nesciunt ratione, asperiores ipsam eligendi. Vero, molestiae! Asperiores.",

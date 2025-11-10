@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
             data.projects.forEach((project, index) => {
                 const projectDiv = document.createElement("div");
                 projectDiv.classList.add("project");
+                // Uses the default template depending on the location of the project
+                // It is designed to alternate imaage and text every other
                 if (index % 2 === 1) {
                   projectDiv.innerHTML = `
                   <img src="${project.image}" alt="${project.alt}">

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 projectCard.href = "/projects.html#$gallery";
                 console.log(projectCard.href)
                 projectCard.classList.add("sample-project");
-                
+                // Uses the default template after reading data
                 projectCard.innerHTML = `
                 <img src="${project.preview_image}" alt="${project.alt}">
                 <div class="project-info">

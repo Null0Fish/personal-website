@@ -85,26 +85,13 @@
 }
 
 @media (max-width: 900px) {
-  .about-hero .hero-content {
-    flex-direction: column;
+  .about-hero {
+    padding: 60px 15px;
     text-align: center;
   }
 
-  .about-hero img {
-    margin: 30px auto 30px auto;
-    width: 300px;
-    height: 300px;
-  }
-
-  .about-hero p {
-    margin: 0 auto;
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-hero {
-    padding: 60px 15px;
+  .about-hero .hero-content {
+    flex-direction: column;
   }
 
   .about-hero h1 {
@@ -112,13 +99,16 @@
   }
 
   .about-hero img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
+    margin: 30px auto 20px;
+    width: clamp(200px, 30vw, 300px);
+    height: clamp(200px, 30vw, 300px);
+    object-fit: cover;
   }
 
   .about-hero p {
     font-size: 1rem;
-    margin: 0 10px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0 10px;
   }
 }

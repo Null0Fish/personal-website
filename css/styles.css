@@ -102,37 +102,3 @@ footer .social-links {
   display: flex;
   gap: 30px;
 }
-
-/* Responsive Tweaks */
-@media (max-width: 900px) {
-  .project {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-  }
-
-  .project img {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .gallery h2,
-  .sample-gallery h2 {
-    font-size: 1.6rem;
-  }
-
-  .project-text h3 {
-    font-size: 1.3rem;
-  }
-
-  .project-text p {
-    font-size: 0.95rem;
-  }
-}

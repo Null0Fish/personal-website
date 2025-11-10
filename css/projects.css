@@ -44,16 +44,25 @@
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 900px) {
-  .project img {
-    width: 80%;
-    max-width: 300px;
-  }
-}
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .project {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
   .project img {
     width: 100%;
-    max-width: none;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .project-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-text p {
+    font-size: 0.95rem;
   }
 }
