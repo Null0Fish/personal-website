@@ -1,2 +1,3 @@
 # personal-website
-This is the git repository for my current work in progress personal protfolio page. I will continue to update this as time allows. This repository is hosted at jacksonconnors.me
+
+This is the git repository for my work-in-progress personal website. I will continue to update this repository as time allows. This my website can be accessed [here](jacksonconnors.me).
