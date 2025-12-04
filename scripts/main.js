@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             projects.forEach(project => {
                 const projectCard = document.createElement("a");
-                projectCard.href = "/projects.html#$gallery";
+                projectCard.href = "#";
                 console.log(projectCard.href)
                 projectCard.classList.add("sample-project");
                 // Uses the default template after reading data
