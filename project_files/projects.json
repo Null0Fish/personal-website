@@ -1,0 +1,42 @@
+{
+    "puzzle-game": {
+        "title": "Puzzle Game",
+        "image": "../images/sample_image_1.png",
+        "image_alt": "Lorem",
+        "github_url": "https://github.com/Null0Fish/puzzle-game",
+        "description": "I created a puzzle game, named Terra Bomber, using the Godot game engine. The game hinges on the idea of destructible puzzles, where levels consist of bombs tha...",
+        "date": ""
+    },
+    "calendar-tool": {
+        "title": "Calendar Tool",
+        "image": "../images/sample_image_1.png",
+        "image_alt": "Lorem",
+        "github_url": "https://github.com/Null0Fish/calendar-tool",
+        "description": "I designed this project the summer before my first semester at Northeastern. I wanted a way to easily and repeatedly import the events from my schedule into my...",
+        "date": ""
+    },
+    "personal-website": {
+        "title": "Personal Website",
+        "image": "../images/sample_image_1.png",
+        "image_alt": "Lorem",
+        "github_url": "https://github.com/Null0Fish/personal-website",
+        "description": "This is the git repository for my work-in-progress personal website. I will continue to update this repository as time allows. This my website can be accessed h...",
+        "date": ""
+    },
+    "youtube-comment-analyzer": {
+        "title": "Youtube Comment Analyzer",
+        "image": "../images/sample_image_1.png",
+        "image_alt": "Lorem",
+        "github_url": "https://github.com/Null0Fish/youtube-comment-analyzer",
+        "description": "This project was a personal project that I did for fun during high school with the goal of gaining empirical experience with professional-grade tools and cloud...",
+        "date": ""
+    },
+    "minesweeper": {
+        "title": "Minesweeper",
+        "image": "../images/sample_image_1.png",
+        "image_alt": "Lorem",
+        "github_url": "https://github.com/Null0Fish/minesweeper",
+        "description": "I made a game of minesweeper using Java and core libraries from Processing. I took inspiration for some of my visuals for Google\u2019s Minesweeper. I was able to fu...",
+        "date": ""
+    }
+}
