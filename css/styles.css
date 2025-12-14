@@ -1,6 +1,6 @@
 /* Color Theme */
 :root {
-  --light-blue: #78c0e0;
+  --light-blue: #b4d6eb;
   --deep-blue: #3f4fb2;
   --navy-blue: #2e388e;
   --soft-blue: #b4d6eb;
@@ -115,7 +115,7 @@ a:hover {
   display: block;
 }
 
-  /* Makes images blend better with theme */
+/* Makes images blend better with theme */
 .filtered-image {
   width: 100%;
   height: auto;

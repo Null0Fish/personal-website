@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
             galleryGrid.innerHTML = "";
 
             projects.forEach(project => {
-                console.log(project)
                 const projectCard = document.createElement("a");
                 projectCard.href = project.url;
                 projectCard.target = "_blank";
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     class_name = 'filtered-image'
                 }
-
                 projectCard.innerHTML = `
                     <img class="${class_name}" src="${project.image}" alt="${project.image_alt}">
                     <div class="project-info">
@@ -27,9 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p>${project.description}</p>
                     </div>
                 `;
-
                 galleryGrid.appendChild(projectCard);
             });
         });
-    console.log(galleryGrid)
 });
