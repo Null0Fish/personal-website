@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const galleryGrid = document.querySelector(".gallery-grid");
 
+    // Generates project html
     fetch("../project_files/projects.json")
         .then(response => response.json())
         .then(data => {
@@ -12,11 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 projectCard.href = project.url;
                 projectCard.target = "_blank";
                 projectCard.classList.add("project");
-                if (project.image == '../images/projects/default-project.png'){
-                    class_name = 'normal-image'
-                } else {
-                    class_name = 'filtered-image'
-                }
+                
+                const class_name = project.image == '../images/projects/default-project.png'
+                    ? 'normal-image'
+                    : 'filtered-image';
+
                 projectCard.innerHTML = `
                     <img class="${class_name}" src="${project.image}" alt="${project.image_alt}">
                     <div class="project-info">
@@ -28,4 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 galleryGrid.appendChild(projectCard);
             });
         });
+
+    // Navbar show/hide
+    const navbar = document.querySelector('.navigation-bar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            navbar.classList.add('visible');
+        } else {
+            navbar.classList.remove('visible');
+        }
+    });
 });

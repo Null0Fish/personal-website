@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
   </head>
 
   <body>
-    <header class="about">
+    <!-- Navigation -->
+  <div class="navigation-bar">
+    <img src="images/favicon/favicon.ico" alt="Logo" class="nav-logo">
+    <div class="nav-links">
+      <a href="#">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+
+    <!-- About -->
+    <header class="about" id="about">
       <h1>About Me</h1>
       <div class="about-content">
         <p>
@@ -29,8 +40,8 @@
       </div>
     </header>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
+    <!-- Gallery -->
+    <section class="gallery" id="projects">
       <h2>Projects</h2>
       <p class="info-text">
         Any of the projects below can be clicked on to see their code on GitHub.
@@ -40,8 +51,8 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
+    <!-- Contact -->
+    <section class="contact" id="contact">
         <h2>Contact Me</h2>
         <p>
           I would love to be in contact with you! If you recopricate such
