@@ -9,6 +9,7 @@ import requests
 
 JSON_FILE = 'projects.json'
 CSV_FILE = 'projects.csv'
+DESCRIPTION_LENGTH = 160
 
 def load_projects():
     with open(JSON_FILE, 'r', encoding='utf-8') as f:
@@ -29,13 +30,18 @@ def add_cmd(project_id):
     print('Added', project_id)
 
 def generate_project_json(project_id):
+    readme = get_readme(project_id)
+    if has_project_image(project_id):
+        image_alt = f'An image showing content related to {project_id}'
+    else:
+        image_alt = 'An image of a blue gradient.'
     return {
         'title': get_title(project_id),
         'image': get_image(project_id),
-        'image_alt': f'An image showing content related to {project_id}',
+        'image_alt': image_alt,
         'url': f'https://github.com/Null0Fish/{project_id}',
-        'description': get_description(project_id),
-        'date': ''
+        'description': readme[:DESCRIPTION_LENGTH],
+        'date': readme.split('\n')[-1]
     }
 
 def get_title(project_id):
@@ -45,13 +51,13 @@ def get_title(project_id):
     return title.strip()
 
 def get_image(project_id):
-    if os.path.exists(f'../images/projects/{project_id}.png'):
+    if has_project_image(project_id):
         return f'../images/projects/{project_id}.png'
     else:
         print(f'No image found for {project_id}, using default.')
         return '../images/projects/default-project.png'
 
-def get_description(project_id, length = 160):
+def get_readme(project_id):
     url = f'https://raw.githubusercontent.com/Null0Fish/{project_id}/refs/heads/main/README.md'
     try:
         resp = requests.get(url, timeout=10)
@@ -63,8 +69,10 @@ def get_description(project_id, length = 160):
         return
     text = "\n".join(resp.text.split("\n")[2:])
     text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
-    return text[:length].strip() + '...'
+    return text.strip()
 
+def has_project_image(project_id):
+    return os.path.exists(f'../images/projects/{project_id}.png')
 
 def del_cmd(project_id):
     projects = load_projects()
@@ -76,11 +84,15 @@ def del_cmd(project_id):
     print(f'Deleted {project_id}.')
 
 def add_all_cmd():
+    # CSV is expected to be ordered by date already
+    projects = load_projects()
     with open(CSV_FILE, newline='', encoding='utf-8') as f:
         reader = csv.reader(f)
         for row in reader:
             project_id = row[0].strip()
-            add_cmd(project_id)
+            projects[project_id] = generate_project_json(project_id)
+    save_projects(projects)
+    print('All projects added.')
 
 def purge_cmd() -> None:
     save_projects({})

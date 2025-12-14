@@ -1,42 +1,42 @@
 {
+    "personal-website": {
+        "title": "Personal Website",
+        "image": "../images/projects/default-project.png",
+        "image_alt": "An image of a blue gradient.",
+        "url": "https://github.com/Null0Fish/personal-website",
+        "description": "This is the git repository for my work-in-progress personal website. I will continue to update this repository as time allows. This my website can be accessed h",
+        "date": "Fall 2025"
+    },
+    "calendar-tool": {
+        "title": "Calendar Tool",
+        "image": "../images/projects/default-project.png",
+        "image_alt": "An image of a blue gradient.",
+        "url": "https://github.com/Null0Fish/calendar-tool",
+        "description": "I designed this project the summer before my first semester at Northeastern. I wanted a way to easily and repeatedly import the events from my schedule into my ",
+        "date": "Summer 2025"
+    },
     "puzzle-game": {
         "title": "Puzzle Game",
         "image": "../images/projects/puzzle-game.png",
         "image_alt": "An image showing content related to puzzle-game",
         "url": "https://github.com/Null0Fish/puzzle-game",
-        "description": "I created a puzzle game, named Terra Bomber, using the Godot game engine. The game hinges on the idea of destructible puzzles, where levels consist of bombs tha...",
-        "date": ""
-    },
-    "calendar-tool": {
-        "title": "Calendar Tool",
-        "image": "../images/projects/default-project.png",
-        "image_alt": "An image showing content related to calendar-tool",
-        "url": "https://github.com/Null0Fish/calendar-tool",
-        "description": "I designed this project the summer before my first semester at Northeastern. I wanted a way to easily and repeatedly import the events from my schedule into my...",
-        "date": ""
-    },
-    "personal-website": {
-        "title": "Personal Website",
-        "image": "../images/projects/default-project.png",
-        "image_alt": "An image showing content related to personal-website",
-        "url": "https://github.com/Null0Fish/personal-website",
-        "description": "This is the git repository for my work-in-progress personal website. I will continue to update this repository as time allows. This my website can be accessed h...",
-        "date": ""
+        "description": "I created a puzzle game, named Terra Bomber, using the Godot game engine. The game hinges on the idea of destructible puzzles, where levels consist of bombs tha",
+        "date": "Spring 2025"
     },
     "youtube-comment-analyzer": {
         "title": "Youtube Comment Analyzer",
         "image": "../images/projects/default-project.png",
-        "image_alt": "An image showing content related to youtube-comment-analyzer",
+        "image_alt": "An image of a blue gradient.",
         "url": "https://github.com/Null0Fish/youtube-comment-analyzer",
-        "description": "This project was a personal project that I did for fun during high school with the goal of gaining empirical experience with professional-grade tools and cloud...",
-        "date": ""
+        "description": "This project was a personal project that I did for fun during high school with the goal of gaining empirical experience with professional-grade tools and cloud ",
+        "date": "Spring 2024"
     },
     "minesweeper": {
         "title": "Minesweeper",
         "image": "../images/projects/minesweeper.png",
         "image_alt": "An image showing content related to minesweeper",
         "url": "https://github.com/Null0Fish/minesweeper",
-        "description": "I made a game of minesweeper using Java and core libraries from Processing. I took inspiration for some of my visuals for Google\u2019s Minesweeper. I was able to fu...",
-        "date": ""
+        "description": "I made a game of minesweeper using Java and core libraries from Processing. I took inspiration for some of my visuals for Google\u2019s Minesweeper. I was able to fu",
+        "date": "Spring 2023"
     }
 }
