@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="project-info">
                         <h3>${project.title}</h3>
                         <p class="project-date">${project.date}</p>
-                        <p>${project.description}</p>
+                        <p class="project-description">${project.description}</p>
                     </div>
                 `;
                 galleryGrid.appendChild(projectCard);

@@ -43,12 +43,13 @@ a:hover {
   padding: 10px 0;
   gap: 1rem;
   z-index: 1000;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease;
+  height: 10px; 
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
 
 .navigation-bar.visible {
-  transform: translateY(0);
+  height: 60px;
 }
 
 .nav-logo {
@@ -56,12 +57,25 @@ a:hover {
   left: 32px;
   width: 32px;
   height: 32px;
+  top: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navigation-bar.visible .nav-logo {
+  opacity: 1;
 }
 
 .nav-links {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navigation-bar.visible .nav-links {
+  opacity: 1;
 }
 
 .navigation-bar a {
@@ -161,6 +175,7 @@ a:hover {
 }
 
 .project:hover {
+  background-color: var(--dark-blue);
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
@@ -196,7 +211,7 @@ a:hover {
     font-style: italic;
 }
 
-.project p {
+.project-description {
   margin-top: 0;
   padding-top: 0;
   color: var(--soft-blue);
@@ -207,7 +222,7 @@ a:hover {
   line-height: 1.5em;
 }
 
-.project p::after {
+.project-description::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -218,6 +233,9 @@ a:hover {
   pointer-events: none;
 }
 
+.project:hover .project-description::after {
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--dark-blue) 100%);
+}
 
 /* Contact */
 .contact {
