@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             galleryGrid.innerHTML = "";
 
             projects.forEach(project => {
+                console.log(project)
                 const projectCard = document.createElement("a");
                 projectCard.href = project.url;
                 projectCard.target = "_blank";
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img class="${class_name}" src="${project.image}" alt="${project.image_alt}">
                     <div class="project-info">
                         <h3>${project.title}</h3>
+                        <p class="project-date">${project.date}</p>
                         <p>${project.description}</p>
                     </div>
                 `;

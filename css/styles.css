@@ -126,12 +126,23 @@ a:hover {
     drop-shadow(0 0 0 rgba(63, 79, 178, 0.6));
 }
 
-
 .project h3 {
-  color: var(--light-blue)
+  color: var(--light-blue);
+  margin-bottom: 2px;
+}
+
+.project-date {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+    line-height: 1em;
+    color: var(--soft-blue);
+    font-style: italic;
 }
 
 .project p {
+  margin-top: 0;
+  padding-top: 0;
   color: var(--soft-blue);
   padding: 0 10px 10px;
   position: relative;
